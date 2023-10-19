@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  display: flex;
+  justify-content: flex-end;
+  width: 200px;
+  font-size: 14px;
+  font-weight: 600;
+  color: deepskyblue;
+  margin-bottom: 4px;
+}
+
+.grid {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px dashed;
+  position: relative;
+}
+
+.grid div {
+  width: 18px;
+  height: 18px;
+  border: 0.1px dashed;
+}
+
+.snake {
+  background-color: lawngreen;
+  border-radius: 5px;
+}
+
+.apple {
+  background-color: crimson;
+}
+
+.start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 45px;
+  border: 1px solid white;
+  border-radius: 40px;
+  background-color: darkblue;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.start:hover {
+  background-color: white;
+  border-color: darkblue;
+  color: darkblue;
+}
+
+.hide-btn {
+  display: none;
+}
